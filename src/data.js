@@ -1,0 +1,1 @@
+export var headers = ["about me", "experience", "portfolio", "things i like"]
