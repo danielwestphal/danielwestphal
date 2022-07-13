@@ -1,8 +1,10 @@
 import "./App.css"
 import "./AboutMe.css"
+import React from "react"
 import GitHub from './images/github.svg';
 import LinkedIn from './images/linkedin.svg';
-import ArrowDown from './images/arrow_downward.svg'
+import Resume from "./documents/resume.pdf"
+import CircleDown from "./components/CircleDown"
 
 
 export function AboutMe() {
@@ -27,7 +29,7 @@ export function AboutMe() {
                     I'm paticularly interested in how accessible design can help to alleviate societal issues.
                 </p>
 
-                <button onClick={(e) => { e.preventDefault(); console.log("hey") }}>
+                <button onClick={(e) => { window.open(Resume, "_blank")}}>
                     Download My Resume
                 </button>
                 <button onClick={() => window.location = 'mailto:daniel.e.westphal.23@dartmouth.edu'}>
@@ -35,9 +37,7 @@ export function AboutMe() {
                 </button>
             </div>
 
-            <div id="semi-circle">
-                <img id="arrowDown" src={ArrowDown} alt="Down Arrow"></img>
-            </div>
+            <CircleDown />
 
         </div>
     );
