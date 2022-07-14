@@ -4,7 +4,7 @@ import "./Circles.css"
 import React from "react"
 import GitHub from './images/github.svg';
 import LinkedIn from './images/linkedin.svg';
-import Resume from "./documents/resume.pdf"
+//import Resume from "./documents/resume.pdf"
 import CircleDown from "./components/CircleDown"
 
 
