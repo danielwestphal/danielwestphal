@@ -1,5 +1,6 @@
 import "./App.css"
 import "./AboutMe.css"
+import "./Circles.css"
 import React from "react"
 import GitHub from './images/github.svg';
 import LinkedIn from './images/linkedin.svg';
@@ -7,10 +8,25 @@ import Resume from "./documents/resume.pdf"
 import CircleDown from "./components/CircleDown"
 
 
-export function AboutMe() {
+export function AboutMe(props) {
 
     return (
+
         <div className="AboutMe">
+            <div>
+                <ul className="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
 
             <div className="links">
                 <img src={GitHub} alt="GitHub Logo"></img>
@@ -26,10 +42,10 @@ export function AboutMe() {
                 <p id="bio">
                     I'm a rising senior at <b>Dartmouth College</b> double majoring in
                     <b> Computer Science Modified with Human Centered Design</b> and <b>Physics</b>.
-                    I'm paticularly interested in how accessible design can help to alleviate societal issues.
+                    I'm interested in how accessible design can help to alleviate societal issues.
                 </p>
 
-                <button onClick={(e) => { window.open(Resume, "_blank")}}>
+                <button onClick={(e) => { window.open(Resume, "_blank") }}>
                     Download My Resume
                 </button>
                 <button onClick={() => window.location = 'mailto:daniel.e.westphal.23@dartmouth.edu'}>
@@ -37,7 +53,9 @@ export function AboutMe() {
                 </button>
             </div>
 
-            <CircleDown />
+            <CircleDown goTo={props.goTo} />
+
+
 
         </div>
     );

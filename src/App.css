@@ -50,6 +50,7 @@ button {
   border: 5px solid white;
   border-radius: 10px;
   cursor: pointer;
+  z-index: 999999;
   transition-property: all;
   transition-duration: 500ms;
 }
@@ -60,6 +61,7 @@ button:hover {
   color: #222135;
   background-color: white;
   border: 5px solid white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px inset;
 }
 
 b {
