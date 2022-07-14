@@ -45,7 +45,7 @@ export function AboutMe(props) {
                     I'm interested in how accessible design can help to alleviate societal issues.
                 </p>
 
-                <button onClick={(e) => { window.open(Resume, "_blank") }}>
+                <button onClick={(e) => { /*window.open(Resume, "_blank")*/ }}>
                     Download My Resume
                 </button>
                 <button onClick={() => window.location = 'mailto:daniel.e.westphal.23@dartmouth.edu'}>
