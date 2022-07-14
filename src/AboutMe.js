@@ -30,7 +30,7 @@ export function AboutMe(props) {
 
             <div className="links">
                 <img src={GitHub} alt="GitHub Logo"></img>
-                <a href="https://www.linkedin.com/in/danielwestphal">GitHub</a>
+                <a href="https://github.com/danielwestphal">GitHub</a>
                 <img src={LinkedIn} alt="LinkedIn Logo"></img>
                 <a href="https://www.linkedin.com/in/danielwestphal">LinkedIn</a>
             </div>
