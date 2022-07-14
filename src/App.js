@@ -1,6 +1,7 @@
-import './App.css';
+import './styles/App.css';
 import React from "react"
 import { AboutMe } from "./AboutMe"
+import { NavBar } from "./NavBar"
 
 function App() {
   const nextSection = React.useRef();
@@ -11,6 +12,7 @@ function App() {
   return (
     
     <div>
+      <NavBar />
       <AboutMe goTo = {() => goTo(nextSection)}/>
 
       <div ref={nextSection}><AboutMe /></div>

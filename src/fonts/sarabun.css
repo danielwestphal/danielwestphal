@@ -1,41 +1,41 @@
 @font-face {
     font-family: "Sarabun";
-    src: url('./fonts/Sarabun/Sarabun-ExtraBold.ttf') format('truetype');
+    src: url('./Sarabun/Sarabun-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Sarabun";
-    src: url('./fonts/Sarabun/Sarabun-Regular.ttf') format('truetype');
+    src: url('./Sarabun/Sarabun-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Sarabun";
-    src: url('./fonts/Sarabun/Sarabun-Bold.ttf') format('truetype');
+    src: url('./Sarabun/Sarabun-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Sarabun";
-    src: url('./fonts/Sarabun/Sarabun-Medium.ttf') format('truetype');
+    src: url('./Sarabun/Sarabun-Medium.ttf') format('truetype');
     font-weight: medium;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Sarabun";
-    src: url('./fonts/Sarabun/Sarabun-SemiBold.ttf') format('truetype');
+    src: url('./Sarabun/Sarabun-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Sarabun";
-    src: url('./fonts/Sarabun/Sarabun-Light.ttf') format('truetype');
+    src: url('./Sarabun/Sarabun-Light.ttf') format('truetype');
     font-weight: light;
     font-style: normal;
 }

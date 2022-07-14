@@ -1,6 +1,6 @@
-import "./App.css"
-import "./AboutMe.css"
-import "./Circles.css"
+import "./styles/App.css"
+import "./styles/AboutMe.css"
+import "./styles/Circles.css"
 import React from "react"
 import GitHub from './images/github.svg';
 import LinkedIn from './images/linkedin.svg';
