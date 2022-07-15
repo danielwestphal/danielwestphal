@@ -15,16 +15,7 @@ export function AboutMe(props) {
         <div className="AboutMe">
             <div>
                 <ul className="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    {new Array(10).fill(<li></li>)}
                 </ul>
             </div>
 
@@ -45,10 +36,10 @@ export function AboutMe(props) {
                     I'm interested in how accessible design can help to alleviate societal issues.
                 </p>
 
-                <button onClick={(e) => { /*window.open(Resume, "_blank")*/ }}>
+                <button className="info" onClick={(e) => { /*window.open(Resume, "_blank")*/ }}>
                     Download My Resume
                 </button>
-                <button onClick={() => window.location = 'mailto:daniel.e.westphal.23@dartmouth.edu'}>
+                <button className="info" onClick={() => window.location = 'mailto:daniel.e.westphal.23@dartmouth.edu'}>
                     Contact Me!
                 </button>
             </div>

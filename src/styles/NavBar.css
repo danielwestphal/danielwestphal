@@ -1,0 +1,54 @@
+@import "../fonts/sarabun.css";
+
+#NavBar {
+    background-color: rgb(255, 255, 255, 0.75);
+    margin: 0;
+    right: 0px;
+    width: 150px;
+    top: 25vh;
+    bottom: 25vh;
+    height: auto;
+    padding: 5px;
+    position: fixed;
+    border-radius: 5px 0 0 5px;
+    z-index: 99999;
+    display: flex;
+    vertical-align: center;
+    text-align: center;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: inherit;
+    overflow: hidden;
+    white-space: nowrap;
+        text-align: center;
+}
+
+li {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    flex: 1;
+    text-align: center;
+}
+
+.Nav {
+
+    color: rgb(0, 0, 0, 0.75);
+    font-family: "Sarabun";
+    font-weight: 600;
+    font-size: 24px;
+    transition-property: all;
+    flex-grow: 1;
+    
+}
+
+.Nav:hover {
+    color: rgb(0, 0, 0, 0.75);
+    font-family: "Sarabun";
+    font-weight: 800;
+    font-size: 24px;
+}

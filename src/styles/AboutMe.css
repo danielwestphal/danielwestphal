@@ -22,7 +22,8 @@
 
 .about {
     width: 100%;
-    margin-top:6%;
+    margin-top: 6%;
+    pointer-events: none;
 }
 
 
@@ -104,4 +105,8 @@ img {
     50% {
         transform: translateY(-5px);
     }
+}
+
+.info {
+    margin-top: 6%;
 }
