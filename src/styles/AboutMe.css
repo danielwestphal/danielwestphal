@@ -72,13 +72,14 @@ img {
 }
 
 #semi-circle {
-    margin-bottom: 0px;
-    margin-top: auto;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     margin-left: auto;
     margin-right: auto;
     width: 200px;
     height: 100px;
-    position: relative;
+    position: absolute;
     border-radius: 150px 150px 0% 0%;
     background-color: #535182;
     border: 4px solid #535182;
