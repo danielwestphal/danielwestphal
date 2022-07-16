@@ -10,10 +10,10 @@ function App() {
   }
 
   return (
-    
+
     <div>
       <NavBar />
-      <AboutMe goTo = {() => goTo(nextSection)}/>
+      <AboutMe goTo={() => goTo(nextSection)} />
 
       <div ref={nextSection}><AboutMe /></div>
     </div>
