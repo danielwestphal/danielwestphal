@@ -9,8 +9,8 @@
 
 .AboutMe {
     background: #222135;
-    height: auto;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     display: inline-block;
     flex-direction: column;
     align-items: center;
