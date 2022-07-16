@@ -22,7 +22,7 @@
 
 .about {
     width: 100%;
-    margin-top: 6%;
+    margin-top: 6vh;
     pointer-events: none;
 }
 
@@ -39,14 +39,14 @@
 #bio {
     width: 70vw;
     margin-top: 5vh;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 
 .links {
     color: white;
-    width: 30%;
-    height: 10%;
-    right: 0;
+    width: 30vw;
+    height: 10vh;
+    right: 0px;
     left: auto;
     position: absolute;
     display: inline-flex;
@@ -56,7 +56,7 @@ a {
     color: white;
     font-family: "Sarabun";
     font-weight: normal;
-    font-size: 24px;
+    font-size: 2vw;
     text-decoration: none;
     margin-left: 0.1%;
     margin-right: auto;
@@ -68,7 +68,11 @@ a {
 img {
     margin: 5%;
     margin-right: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
     padding: auto;
+    width: 4vw;
+    height: 4vw;
 }
 
 #semi-circle {
@@ -77,8 +81,8 @@ img {
     right: 0px;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
-    height: 100px;
+    width: 13vw;
+    height: 6.5vw;
     position: absolute;
     border-radius: 150px 150px 0% 0%;
     background-color: #535182;
@@ -90,9 +94,11 @@ img {
 #arrowDown {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 1vw;
     margin-bottom: auto;
     display: flex;
+    width: 5vw;
+    height: 5vw;
     animation: MoveUpDown 3s ease-in-out infinite;
 }
 

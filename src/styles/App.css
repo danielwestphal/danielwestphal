@@ -9,7 +9,7 @@ h1 {
   padding-top: 0%;
   padding-bottom: 0%;
   font-weight: 800;
-  font-size: 100px;
+  font-size: 6.5vw; /*was 100px */
   margin-bottom: 0;
 }
 
@@ -22,7 +22,7 @@ h2 {
   padding-top: 0%;
   padding-bottom: 0%;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 3.25vw;
   margin-top: 0;
 }
 
@@ -32,14 +32,14 @@ p {
   padding-right: 5%;
   font-family: "Sarabun";
   color: white;
-  font-size: 32px;
+  font-size: 2.08vw;
   font-weight: normal;
 }
 
 button {
   font-family: "Sarabun";
   font-weight: medium;
-  font-size: 32px;
+  font-size: 2.08vw;
   color: white;
   background-color: #222135;
   padding-top: 0.5%;
@@ -48,9 +48,9 @@ button {
   margin-bottom: 5%;
   margin-left: 5%;
   margin-right: 5%;
-  width: 25%;
+  width: 25vw;
   border: 1px solid white;
-  border-radius: 10px;
+  border-radius: 1vw;
   cursor: pointer;
   z-index: 999999;
   transition-property: all;
