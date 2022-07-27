@@ -53,11 +53,11 @@ img {
     height: 4vw;
     transition: all;
     transition-duration: 500ms;
+    vertical-align: middle;
 }
 
 img:hover {
     transform: scale(1.2);
-    filter: drop-shadow(2px 2px 1px #CFCFCF);
 }
 
 .info {

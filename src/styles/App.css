@@ -131,3 +131,16 @@ h1.title {
       width: 100%;
       margin-top: 6vh;
 }
+
+a {
+  color: white;
+  font-family: "Sarabun";
+  font-weight: normal;
+  font-size: 1.7vw;
+  text-decoration: none;
+  margin-left: 0.1%;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: auto;
+}
