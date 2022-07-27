@@ -7,7 +7,7 @@
     outline: 0;
 }
 
-.AboutMe {
+.Home {
     background: #222135;
     height: 100vh;
     width: 100vw;
@@ -42,28 +42,6 @@
     margin-bottom: 5vh;
 }
 
-.links {
-    color: white;
-    width: 15vw;
-    height: 10vh;
-    right: 0px;
-    left: auto;
-    position: absolute;
-    display: inline-flex;
-}
-
-a {
-    color: white;
-    font-family: "Sarabun";
-    font-weight: normal;
-    font-size: 2vw;
-    text-decoration: none;
-    margin-left: 0.1%;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: auto;
-}
 
 img {
     margin: 5%;

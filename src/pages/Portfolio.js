@@ -1,11 +1,13 @@
 import React from 'react'
 import '../styles/App.css'
 import '../styles/Portfolio.css'
+import NavBar from "../components/NavBar"
 
 export default function Portfolio(props) {
     return (
         <div className="Portfolio">
-            <h1 className='dark'> My Portfolio</h1>
+            <NavBar selected = "Portfolio"/>
+            <h1 className='title'> <em> Projects</em> I've worked on</h1>
         </div>
         
     );

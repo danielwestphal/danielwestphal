@@ -1,4 +1,4 @@
-.Portfolio {
+.About {
     background: #222135;
     height: 100vh;
     width: 100vw;
@@ -9,11 +9,4 @@
     margin: 0px;
     padding: 0px;
     z-index: 1;
-}
-
-.projects {
-    width: 70vw !important;
-    height: 40vh !important;
-    margin: auto;
-    padding: auto;
 }
