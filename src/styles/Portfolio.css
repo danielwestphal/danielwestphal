@@ -1,7 +1,7 @@
 .Portfolio {
     background: #222135;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: inline-block;
     flex-direction: column;
     align-items: center;
