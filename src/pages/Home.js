@@ -1,11 +1,11 @@
-import "./styles/App.css"
-import "./styles/AboutMe.css"
-import "./styles/Circles.css"
+import "../styles/App.css"
+import "../styles/AboutMe.css"
+import "../styles/Circles.css"
 import React from "react"
-import GitHub from './images/github.svg';
-import LinkedIn from './images/linkedin.svg';
+import GitHub from '../images/github.svg';
+import LinkedIn from '../images/linkedin.svg';
 //import Resume from "./documents/resume.pdf"
-import CircleDown from "./components/CircleDown"
+import CircleDown from "../components/CircleDown"
 
 
 export default function Home(props) {
