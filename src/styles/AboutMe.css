@@ -44,7 +44,7 @@
 
 .links {
     color: white;
-    width: 30vw;
+    width: 15vw;
     height: 10vh;
     right: 0px;
     left: auto;
@@ -73,45 +73,13 @@ img {
     padding: auto;
     width: 4vw;
     height: 4vw;
+    transition: all;
+    transition-duration: 500ms;
 }
 
-#semi-circle {
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 13vw;
-    height: 6.5vw;
-    position: absolute;
-    border-radius: 150px 150px 0% 0%;
-    background-color: #535182;
-    border: 4px solid #535182;
-    outline: none;
-    cursor: pointer;
-}
-
-#arrowDown {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1vw;
-    margin-bottom: auto;
-    display: flex;
-    width: 5vw;
-    height: 5vw;
-    animation: MoveUpDown 3s ease-in-out infinite;
-}
-
-@keyframes MoveUpDown {
-
-    0%,
-    100% {
-        transform: translateY(+5px);
-    }
-
-    50% {
-        transform: translateY(-5px);
-    }
+img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(2px 2px 1px #CFCFCF);
 }
 
 .info {

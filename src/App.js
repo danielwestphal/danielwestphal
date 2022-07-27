@@ -1,21 +1,21 @@
+import React from 'react';
 import './styles/App.css';
-import React from "react"
-import { AboutMe } from "./AboutMe"
+import { BrowserRouter as Router, Routes, Route }
+  from 'react-router-dom';
+import Home from './Home';
+import Media from './Media'
 
 function App() {
-  const nextSection = React.useRef();
-  const goTo = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth", })
-  }
-
   return (
-
-    <div>
-      <AboutMe goTo={() => goTo(nextSection)} />
-
-      <div ref={nextSection}><AboutMe /></div>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+        <Route path='/about' element={<Media />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
+

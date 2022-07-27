@@ -13,6 +13,20 @@ h1 {
   margin-bottom: 0;
 }
 
+h1.dark {
+  font-family: "Sarabun";
+  color: #222135;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  font-weight: 800;
+  font-size: 6.5vw;
+  /*was 100px */
+  margin-bottom: 0;
+}
+
 h2 {
   font-family: "Sarabun";
   color: #CFCFCF;
@@ -53,7 +67,7 @@ button {
   border-radius: 1vw;
   cursor: pointer;
   z-index: 999999;
-  transition-property: all;
+  transition-property: color background-color box-shadow;
   transition-duration: 500ms;
   pointer-events: visible;
 }
@@ -67,4 +81,43 @@ button:hover {
 b {
   color: white;
   font-weight: 600px;
+}
+
+#semi-circle {
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 13vw;
+  height: 6.5vw;
+  position: absolute;
+  border-radius: 150px 150px 0% 0%;
+  background-color: #535182;
+  border: 4px solid #535182;
+  outline: none;
+  cursor: pointer;
+}
+
+#arrowDown {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vw;
+  margin-bottom: auto;
+  display: flex;
+  width: 5vw;
+  height: 5vw;
+  animation: MoveUpDown 3s ease-in-out infinite;
+}
+
+@keyframes MoveUpDown {
+
+  0%,
+  100% {
+    transform: translateY(+1vh);
+  }
+
+  50% {
+    transform: translateY(-1vh);
+  }
 }

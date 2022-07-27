@@ -8,7 +8,7 @@ import LinkedIn from './images/linkedin.svg';
 import CircleDown from "./components/CircleDown"
 
 
-export function AboutMe(props) {
+export default function Home(props) {
 
     return (
 
@@ -20,10 +20,14 @@ export function AboutMe(props) {
             </div>
 
             <div className="links">
-                <img src={GitHub} alt="GitHub Logo"></img>
-                <a href="https://github.com/danielwestphal">GitHub</a>
-                <img src={LinkedIn} alt="LinkedIn Logo"></img>
-                <a href="https://www.linkedin.com/in/danielwestphal">LinkedIn</a>
+                
+                <a href="https://github.com/danielwestphal" target="_blank" rel="noopener noreferrer">
+                    <img src={GitHub} alt="GitHub Logo" />
+                    </a>
+                
+                <a href="https://www.linkedin.com/in/danielwestphal" target="_blank" rel="noopener noreferrer">
+                    <img src={LinkedIn} alt="LinkedIn Logo" />
+                </a>
             </div>
 
 
