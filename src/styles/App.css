@@ -110,6 +110,10 @@ b {
   animation: MoveUpDown 3s ease-in-out infinite;
 }
 
+#accent {
+  color : #EE5F5F;
+}
+
 @keyframes MoveUpDown {
 
   0%,
