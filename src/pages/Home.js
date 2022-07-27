@@ -1,6 +1,7 @@
 import "../styles/App.css"
 import "../styles/Home.css"
 import "../styles/Circles.css"
+import Arrow from '../images/arrow.svg'
 import GitHub from '../images/github.svg';
 import LinkedIn from '../images/linkedin.svg';
 import Mail from '../images/mail.svg'
@@ -20,8 +21,10 @@ export default function Home(props) {
             </div>
 
             <NavBar selected="Home" />
-
-
+            <div id="ResumeArrow">
+                <h4 style={{paddingTop: '30%', float: 'left'}}>check out my resume</h4>
+                <img src={Arrow} style={{float: 'left', height: 'auto', width: '7vw'}} alt="idk" />
+            </div>
 
             <div className="about">
                 <h1 id="name">Hi, I'm <em className="accent">Daniel</em></h1>
@@ -36,32 +39,34 @@ export default function Home(props) {
                     Contact Me:
 
                 </p>
+
+                <div >
+                    <div >
+
+                        <a style={{ zIndex: 1, width: '10vw' }} href="https://github.com/danielwestphal" target="_blank" rel="noopener noreferrer">
+                            <img src={GitHub} alt="GitHub Logo" />
+                            @danielwestphal
+                        </a>
+                    </div>
+                    <br />
+                    <div>
+                        <a style={{ zIndex: 1, width: '10vw' }} href="https://www.linkedin.com/in/danielwestphal" target="_blank" rel="noopener noreferrer">
+                            <img src={LinkedIn} alt="LinkedIn Logo" />
+                            Daniel Westphal
+                        </a>
+                    </div>
+                    <br />
+                    <div>
+                        <a style={{ zIndex: 1, width: '10vw' }} href="mailto:dew.23@dartmouth.edu" target="_top">
+                            <img src={Mail} alt="Envelope" />
+                            dew.23@dartmouth.edu
+                        </a>
+                    </div>
+
+                </div>
             </div>
 
-            <div>
-                <div style={{ height: '4vw' }}>
-
-                    <a href="https://github.com/danielwestphal" target="_blank" rel="noopener noreferrer">
-                        <img src={GitHub} alt="GitHub Logo" />
-                        @danielwestphal
-                    </a>
-                </div>
-                <br />
-                <div>
-                    <a href="https://www.linkedin.com/in/danielwestphal" target="_blank" rel="noopener noreferrer">
-                        <img src={LinkedIn} alt="LinkedIn Logo" />
-                        Daniel Westphal
-                    </a>
-                </div>
-                <br />
-                <div>
-                    <a href="mailto:dew.23@dartmouth.edu" target="_top">
-                        <img src={Mail} alt="Envelope" />
-                        dew.23@dartmouth.edu
-                    </a>
-                </div>
-
-            </div>
+            
 
 
         </div>

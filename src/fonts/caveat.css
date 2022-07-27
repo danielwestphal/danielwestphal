@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Caveat";
+    src: url('./Caveat/static/Caveat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: url('./Caveat/static/Caveat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: url('./Caveat/static/Caveat-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: url('./Caveat/static/Caveat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
