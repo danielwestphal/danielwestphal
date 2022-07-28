@@ -1,0 +1,15 @@
+div.project {
+    width: 20vw;
+    height: 20vw;
+    margin: auto;
+    margin-bottom: 2vw;
+}
+
+img.project {
+    width:20vw;
+    height: 20vw;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
+}

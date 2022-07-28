@@ -1,7 +1,8 @@
 .Portfolio {
     background: #222135;
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
     display: inline-block;
     flex-direction: column;
     align-items: center;
@@ -9,11 +10,36 @@
     margin: 0px;
     padding: 0px;
     z-index: 1;
+    outline: 1px red solid;
+    overflow-y: scroll;
+}
+
+.filters {
+    width: 55vw;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    padding: auto;
+    display: flex;
+}
+
+button.filter {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: auto;
+    width: 16vw;
+    border-radius: 500px;
 }
 
 .projects {
-    width: 70vw !important;
-    height: 40vh !important;
+    width: 70vw;
+    height: auto;
     margin: auto;
     padding: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
