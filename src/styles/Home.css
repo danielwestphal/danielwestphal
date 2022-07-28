@@ -51,13 +51,7 @@ img {
     padding: auto;
     width: 4vw;
     height: 4vw;
-    transition: all;
-    transition-duration: 500ms;
     vertical-align: middle;
-}
-
-img.icon:hover {
-    transform: scale(1.2);
 }
 
 .info {
