@@ -9,7 +9,7 @@
 
 .Home {
     background: #222135;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: inline-block;
     flex-direction: column;
@@ -79,7 +79,7 @@ img.ResumeArrow:hover {
     width: 100%;
     height: 250px;
     transition: none;
-        right: 0px;
-        top: 0px;
-        position: absolute;
+    right: 0px;
+    top: 0px;
+    position: absolute;
 }
