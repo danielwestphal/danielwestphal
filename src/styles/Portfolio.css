@@ -10,7 +10,6 @@
     margin: 0px;
     padding: 0px;
     z-index: 1;
-    outline: 1px red solid;
     overflow-y: scroll;
 }
 

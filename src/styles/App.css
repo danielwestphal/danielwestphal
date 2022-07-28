@@ -103,7 +103,7 @@ b {
   cursor: pointer;
 }
 
-#arrowDown {
+.arrow {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1vw;
@@ -160,4 +160,10 @@ h4 {
   color: white;
   text-shadow: 0px -1% 1% rgba(255, 255, 255);
   font-size: 2.3vw;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  font-family: 'Sarabun';
 }
