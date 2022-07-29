@@ -22,7 +22,7 @@ export default function Home(props) {
 
             <NavBar selected="Home" />
             <div id="ResumeArrow">
-                <h4 style={{paddingTop: '30%', float: 'left'}}>check out my resume</h4>
+                <h4 style={{paddingTop: '40%', float: 'left'}}>check out my resume</h4>
                 <img src={Arrow} style={{float: 'left', height: 'auto', width: '7vw'}} alt="arrow pointing to resume" />
             </div>
 

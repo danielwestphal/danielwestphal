@@ -1,26 +1,27 @@
 import React from 'react'
 import '../styles/App.css'
 import '../styles/Project.css'
-import Ajax from "../images/ajax.png"
 
 export default function Project(props) {
     const [info, setInfo] = React.useState(false);
 
+    let project = props.data;
+
     return (
         <div className="project" onMouseEnter={() => setInfo(true)} onMouseLeave={() => setInfo(false)}>
-            <img className={info ? "project blur" : "project"} src={Ajax} alt="project!" />
+            <img className={info ? "project blur" : "project"} src={project.image} alt="project!" />
             {info &&
                 (<div className='info'>
                     <div className='information'>
                         <h5>
-                            Ajax
+                            {project.title}
                         </h5>
                         <h6>
-                            Fall 2021
+                            {project.date}
                         </h6>
                         <br></br>
                         <p className='description'>
-                            Custom ray-tracing algorithm for dielectric, matte, and reflective surfaces.
+                            {project.description}
                         </p>
                     </div>
                 </div>)

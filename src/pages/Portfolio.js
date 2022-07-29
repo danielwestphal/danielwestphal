@@ -5,6 +5,7 @@ import NavBar from "../components/NavBar"
 import Project from '../components/Project'
 import ArrowUp from "../components/ArrowUp"
 import check from "../images/check.svg"
+import {portfolio} from '../data/portfolio'
 
 export default function Portfolio(props) {
     const nextSection = React.useRef();
@@ -55,7 +56,18 @@ export default function Portfolio(props) {
                 </button>
             </div>
             <div className='projects'>
-                {[0, 0, 0, 0, 0, 0, 0].map(e => { return (<Project />) })}
+                {portfolio.filter(proj => {
+                    let tags = [];
+                    if (digitalArt) tags.push("Digital Art");
+                    if (UIUX) tags.push("UI / UX");
+                    if (program) tags.push("Programming");
+                    for (const x of proj.tags){
+                        for (const t of tags){
+                            if (x === t) return true;
+                        }
+                    }
+                    return false;
+                }).map((proj, i) => { return (<Project data = {proj} key={i}/>) })}
             </div>
             <div onClick={() => goTo(nextSection)} style={{ cursor: 'pointer' }}>
                 <ArrowUp />
