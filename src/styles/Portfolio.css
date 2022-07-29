@@ -14,7 +14,7 @@
 }
 
 .filters {
-    width: 55vw;
+    width: 50vw;
     height: auto;
     margin-right: auto;
     margin-left: auto;
@@ -25,13 +25,29 @@
 }
 
 button.filter {
-    margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
+    margin-left: auto;
     margin-bottom: auto;
-    padding: auto;
-    width: 16vw;
+    margin-top: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: auto;
     border-radius: 500px;
+    color: white;
+    background-color: #222135;
+    display: block;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+button.filter:hover {
+    background-color: white;
+    color: #222135;
 }
 
 .projects {
@@ -41,4 +57,36 @@ button.filter {
     padding: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+img.check {
+    height: 1.5vw;
+    object-fit: contain;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: auto;
+}
+
+button.filter_clicked {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 0;
+    padding-right: 2vw;
+    width: auto;
+    height: auto;
+    border-radius: 500px;
+    color: #222135;
+    background-color: white;
+    height: 4vw;
+    align-items: center
+}
+
+div.text {
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
 }
