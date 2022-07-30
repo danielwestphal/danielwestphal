@@ -96,4 +96,51 @@ div.information {
     color: black;
     text-align: center;
     }
+
+    h5 {
+        font-family: "Sarabun";
+        font-weight: 600;
+        font-size: 3vw;
+        text-align: center;
+    }
+    
+    h6 {
+        font-family: "Sarabun";
+        font-weight: 400;
+        font-size: 2vw;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    div.project {
+        width: 50vw;
+        height: 50vw;
+        margin: auto;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        position: relative;
+    }
+
+        p.description {
+            margin-top: 10%;
+            font-family: "Sarabun";
+            font-size: 2vw;
+            color: black;
+            text-align: center;
+        }
+
+        h5 {
+            font-family: "Sarabun";
+            font-weight: 600;
+            font-size: 5vw;
+            text-align: center;
+        }
+        
+        h6 {
+            font-family: "Sarabun";
+            font-weight: 400;
+            font-size: 4vw;
+            text-align: center;
+        }
 }
