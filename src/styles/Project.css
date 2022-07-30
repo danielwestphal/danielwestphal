@@ -17,12 +17,12 @@ img.project {
     min-height: 100%;
     margin: auto;
     border-radius: 5px;
-    outline: 1px white solid;
+    box-shadow: 0 0 1px white;
 
 }
 
 .blur {
-    -webkit-filter: blur(4px);
+    -webkit-filter: blur(2px);
     filter: blur(2px);
 }
 

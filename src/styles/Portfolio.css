@@ -50,6 +50,17 @@ button.filter:hover {
     color: #222135;
 }
 
+@media only screen and (max-width: 786px) {
+    .projects {
+        width: 70vw;
+        height: auto;
+        margin: auto;
+        padding: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
 .projects {
     width: 70vw;
     height: auto;
