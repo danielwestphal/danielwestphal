@@ -43,7 +43,7 @@ div.sticky {
     height: 10%;
     top: -5%;
     left: 0;
-    right: 0;
+    right:0;
     margin-left: auto;
     margin-right: auto;
     background-color: #212121;
@@ -62,7 +62,7 @@ h5 {
 h6 {
     font-family: "Sarabun";
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 1.5vw;
     text-align: center;
 }
 
@@ -87,5 +87,13 @@ div.information {
         margin-top: 1vw;
         margin-bottom: 1vw;
         position: relative;
+    }
+
+    p.description {
+    margin-top: 10%;
+    font-family: "Sarabun";
+    font-size: 1.5vw;
+    color: black;
+    text-align: center;
     }
 }
