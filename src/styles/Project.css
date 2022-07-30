@@ -28,10 +28,10 @@ img.project {
 
 div.info {
     position: absolute;
-    width: 15vw;
-    height: 15vw;
-    bottom: 2.5vw;
-    right: 2.5vw;
+    width: 75%;
+    height: 75%;
+    bottom: 12.5%;
+    right: 12.5%;
     background-color: white;
     z-index: 2;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -39,10 +39,13 @@ div.info {
 
 div.sticky {
     position: absolute;
-    width: 4vw;
-    height: 2vw;
-    top: -1vw;
-    right: 5.5vw;
+    width: 20%;
+    height: 10%;
+    top: -5%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #212121;
     opacity: 0.8;
     z-index: 3;
@@ -74,4 +77,15 @@ p.description {
 
 div.information {
     transform: translateY(15%);
+}
+
+@media only screen and (max-width: 1100px) {
+    div.project {
+        width: 30vw;
+        height: 30vw;
+        margin: auto;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        position: relative;
+    }
 }
