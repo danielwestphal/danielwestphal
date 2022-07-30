@@ -5,7 +5,7 @@ import NavBar from "../components/NavBar"
 import Project from '../components/Project'
 import ArrowUp from "../components/ArrowUp"
 import check from "../images/check.svg"
-import {portfolio} from '../data/portfolio'
+import { portfolio } from '../data/portfolio'
 
 export default function Portfolio(props) {
     const nextSection = React.useRef();
@@ -30,6 +30,19 @@ export default function Portfolio(props) {
     const toggleProgram = () => {
         setProgram(!program);
     }
+
+    const filtered_portfolio = portfolio.filter(proj => {
+        let tags = [];
+        if (digitalArt) tags.push("Digital Art");
+        if (UIUX) tags.push("UI / UX");
+        if (program) tags.push("Programming");
+        for (const x of proj.tags) {
+            for (const t of tags) {
+                if (x === t) return true;
+            }
+        }
+        return false;
+    });
 
     return (
         <div className="Portfolio" ref={nextSection}>
@@ -56,23 +69,24 @@ export default function Portfolio(props) {
                 </button>
             </div>
             <div className='projects'>
-                {portfolio.filter(proj => {
-                    let tags = [];
-                    if (digitalArt) tags.push("Digital Art");
-                    if (UIUX) tags.push("UI / UX");
-                    if (program) tags.push("Programming");
-                    for (const x of proj.tags){
-                        for (const t of tags){
-                            if (x === t) return true;
-                        }
-                    }
-                    return false;
-                }).map((proj, i) => { return (<Project data = {proj} key={i}/>) })}
+                {filtered_portfolio.map((proj, i) => { return (<Project data={proj} key={i} />) })}
+
             </div>
-            <div onClick={() => goTo(nextSection)} style={{ cursor: 'pointer' }}>
+            {filtered_portfolio.length === 0 &&
+                <div>
+                    <br />
+                    <h2 style={{ textAlign: 'center' }}>
+                        Nothing Matches your Query :(
+                    </h2>
+                    <br />
+                    <h3>
+                        Try Adding some Filters!
+                    </h3>
+                </div>}
+            {filtered_portfolio.length !== 0 && <div onClick={() => goTo(nextSection)} style={{ cursor: 'pointer' }}>
                 <ArrowUp />
                 <h3>Return to Top</h3>
-            </div>
+            </div>}
 
         </div>
 

@@ -12,6 +12,9 @@ export default function Project(props) {
             <img className={info ? "project blur" : "project"} src={project.image} alt="project!" />
             {info &&
                 (<div className='info'>
+                    <div className='sticky'>
+                        
+                    </div>
                     <div className='information'>
                         <h5>
                             {project.title}
@@ -19,7 +22,6 @@ export default function Project(props) {
                         <h6>
                             {project.date}
                         </h6>
-                        <br></br>
                         <p className='description'>
                             {project.description}
                         </p>

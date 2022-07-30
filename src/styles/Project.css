@@ -37,6 +37,18 @@ div.info {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
+div.sticky {
+    position: absolute;
+    width: 4vw;
+    height: 2vw;
+    top: -1vw;
+    right: 5.5vw;
+    background-color: #212121;
+    opacity: 0.8;
+    z-index: 3;
+    transform: rotate(-7deg);
+}
+
 h5 {
     font-family: "Sarabun";
     font-weight: 600;
@@ -52,6 +64,7 @@ h6 {
 }
 
 p.description {
+    margin-top: 10%;
     font-family: "Sarabun";
     font-size: 1vw;
     color: black;
