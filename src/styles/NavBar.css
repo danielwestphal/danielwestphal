@@ -10,6 +10,24 @@
     display: inline-flex;
 }
 
+.name {
+    color: white;
+    width: 20vw;
+    height: 10vh;
+    left: 0px;
+    right: auto;
+    position: absolute;
+    display: inline-flex;
+    margin-left: 5vw;
+}
+
+img.logo {
+    height: 1.7vw;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 0.5vw;
+}
+
 a {
     color: white;
     font-family: "Sarabun";
@@ -28,6 +46,6 @@ a:hover {
 }
 
 a.selected {
-    color : #EE5F5F;
+    color: #EE5F5F;
     font-weight: 600;
 }

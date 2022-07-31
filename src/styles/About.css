@@ -10,3 +10,165 @@
     padding: 0px;
     z-index: 1;
 }
+
+#rf0 {
+    transform: rotate(123.93deg);
+    left: -5%;
+    top: -3%;
+    animation: walk 1s ease 0.6s;
+}
+
+#lf0 {
+    transform: rotate(144.57deg);
+    left: 4%;
+    top: 0%;
+    animation: walk 1s ease 1s;
+}
+
+#rf1 {
+    transform: rotate(123.93deg);
+    left: 2%;
+    top: 15%;
+    animation: walk 1s ease 1.4s;
+}
+
+#lf1 {
+    transform: rotate(144.57deg);
+    left: 12%;
+    top: 16%;
+    animation: walk 1s ease 1.6s;
+}
+
+#rf2 {
+    transform: rotate(123.93deg);
+    left: 12%;
+    top: 30%;
+    animation: walk 1s ease 2s;
+}
+
+#lf2 {
+    transform: rotate(144.57deg);
+    left: 20%;
+    top: 30%;
+    animation: walk 1s ease 2.4s;
+}
+
+
+#rf3 {
+    transform: rotate(105.7deg);
+    left: 25%;
+    top: 45%;
+    animation: walk 1s ease 2.8s;
+}
+
+#lf3 {
+    transform: rotate(97.93deg);
+    left: 32%;
+    top: 35%;
+    animation: walk 1s ease 3.2s;
+}
+
+#rf4 {
+    transform: rotate(58.33deg);
+    left: 41%;
+    top: 45%;
+    animation: walk 1s ease 3.6s;
+}
+
+#lf4 {
+    transform: rotate(66.06deg);
+    left: 44%;
+    top: 30%;
+    animation: walk 1s ease 4s;
+}
+
+#rf5 {
+    transform: rotate(70.12deg);
+    left: 52%;
+    top: 40%;
+    animation: walk 1s ease 4.4s;
+}
+
+#lf5 {
+    transform: rotate(97.4deg);
+    left: 59%;
+    top: 26%;
+    animation: walk 1s ease 4.8s;
+}
+
+#rf6 {
+    transform: rotate(108.66deg);
+    left: 63%;
+    top: 45%;
+    animation: walk 1s ease 5.2s;
+}
+
+#lf6 {
+    transform: rotate(121.03deg);
+    left: 71%;
+    top: 35%;
+    animation: walk 1s ease 5.6s;
+}
+
+#rf7 {
+    transform: rotate(141.71deg);
+    left: 73%;
+    top: 57%;
+    animation: walk 1s ease 6s;
+}
+
+#lf7 {
+    transform: rotate(155.17deg);
+    left: 82%;
+    top: 54.5%;
+    animation: walk 1s ease 6.4s;
+}
+
+#rf8 {
+    transform: rotate(131.71deg);
+    left: 81%;
+    top: 74%;
+    animation: walk 1s ease 6.8s;
+}
+
+#lf8 {
+    transform: rotate(137.17deg);
+    left: 90%;
+    top: 73%;
+    animation: walk 1s ease 7.2s;
+}
+
+#rf9 {
+    transform: rotate(100.71deg);
+    left: 91%;
+    top: 88%;
+    animation: walk 1s ease 7.6s;
+}
+
+
+
+img.footprints:hover {
+    filter: brightness(3);
+}
+
+img.footprints {
+    position: absolute;
+    transition: filter 1s ease;
+    height: min(8.5vw,16vh);
+    z-index: -1;
+
+}
+
+@keyframes walk {
+    0% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(3);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+}
