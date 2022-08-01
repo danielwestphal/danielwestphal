@@ -1,0 +1,19 @@
+.PageNotFound {
+    background: #222135;
+    min-height: 100vh;
+    width: 100vw;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+}
+
+.error {
+    text-align: center;
+    top:0;
+    bottom:0;
+    margin-top: 20vh;
+}

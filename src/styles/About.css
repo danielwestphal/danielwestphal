@@ -20,7 +20,7 @@
 
 #lf0 {
     transform: rotate(144.57deg);
-    left: 4%;
+    left: 6%;
     top: 0%;
     animation: walk 1s ease 1s;
 }
@@ -34,7 +34,7 @@
 
 #lf1 {
     transform: rotate(144.57deg);
-    left: 12%;
+    left: 15%;
     top: 16%;
     animation: walk 1s ease 1.6s;
 }
@@ -47,9 +47,9 @@
 }
 
 #lf2 {
-    transform: rotate(144.57deg);
-    left: 20%;
-    top: 30%;
+    transform: rotate(134.57deg);
+    left: 23%;
+    top: 29%;
     animation: walk 1s ease 2.4s;
 }
 
@@ -63,22 +63,22 @@
 
 #lf3 {
     transform: rotate(97.93deg);
-    left: 32%;
+    left: 34%;
     top: 35%;
     animation: walk 1s ease 3.2s;
 }
 
 #rf4 {
-    transform: rotate(58.33deg);
-    left: 41%;
-    top: 45%;
+    transform: rotate(68.33deg);
+    left: 39%;
+    top: 46%;
     animation: walk 1s ease 3.6s;
 }
 
 #lf4 {
-    transform: rotate(66.06deg);
-    left: 44%;
-    top: 30%;
+    transform: rotate(77.06deg);
+    left: 46%;
+    top: 31%;
     animation: walk 1s ease 4s;
 }
 
@@ -92,7 +92,7 @@
 #lf5 {
     transform: rotate(97.4deg);
     left: 59%;
-    top: 26%;
+    top: 28%;
     animation: walk 1s ease 4.8s;
 }
 
@@ -104,14 +104,14 @@
 }
 
 #lf6 {
-    transform: rotate(121.03deg);
+    transform: rotate(131.03deg);
     left: 71%;
     top: 35%;
     animation: walk 1s ease 5.6s;
 }
 
 #rf7 {
-    transform: rotate(141.71deg);
+    transform: rotate(123.71deg);
     left: 73%;
     top: 57%;
     animation: walk 1s ease 6s;

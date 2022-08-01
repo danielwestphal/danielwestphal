@@ -32,7 +32,7 @@ export default function NavBar(props) {
 
                     return <a href={header.link} className={select} > {header.name} </a>
                 })}
-                <a href="#1" onClick={(e) => {/* window.open(Resume, "_blank") */ }}>Resume</a>
+                <a href="/resume" onClick={(e) => {/* window.open(Resume, "_blank") */ }}>Resume</a>
             </div>
         </div>)
 }
