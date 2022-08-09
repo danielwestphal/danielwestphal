@@ -21,11 +21,18 @@
     margin-left: 5vw;
 }
 
-img.logo {
+svg.logo {
     height: 1.7vw;
     width: auto;
-    vertical-align: middle;
     margin-right: 0.5vw;
+    fill: var(--font-color);
+}
+
+svg {
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: middle;
+
 }
 
 a {
