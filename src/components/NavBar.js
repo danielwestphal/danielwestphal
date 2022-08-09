@@ -140,7 +140,6 @@ export default function NavBar(props) {
                     control={<MaterialUISwitch sx={{ m: 1 }} />}
                     onChange={toggleTheme}
                     checked={checked}
-                    defaultChecked={!defaultDark}
 
                 />
             </div>
