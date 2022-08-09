@@ -7,6 +7,7 @@ div.project {
     margin-top: 1vw;
     margin-bottom: 1vw;
     position: relative;
+    cursor: pointer;
 }
 
 img.project {
@@ -52,7 +53,7 @@ div.sticky {
     transform: rotate(-7deg);
 }
 
-h5 {
+h5.projTitle.projTitle {
     font-family: "Sarabun";
     font-weight: 600;
     font-size: 2.5vw;
@@ -77,6 +78,7 @@ p.description {
 
 div.information {
     transform: translateY(15%);
+    color: black;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -97,7 +99,7 @@ div.information {
         text-align: center;
     }
 
-    h5 {
+    h5.projTitle.projTitle {
         font-family: "Sarabun";
         font-weight: 600;
         font-size: 3vw;
@@ -130,11 +132,12 @@ div.information {
         text-align: center;
     }
 
-    h5 {
+    h5.projTitle {
         font-family: "Sarabun";
         font-weight: 600;
         font-size: 8vw;
         text-align: center;
+        color: black;
     }
 
     h6 {
@@ -142,5 +145,6 @@ div.information {
         font-weight: 400;
         font-size: 6vw;
         text-align: center;
+        color: black;
     }
 }

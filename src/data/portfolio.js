@@ -9,28 +9,32 @@ export const portfolio = [
         tags: ["UI / UX"],
         title: "Chronicle",
         date: "Spring 2022",
-        description: "A tablet app where family members can create collaborative digital stories to preserve precious memories."
+        description: "A tablet app where family members can create collaborative digital stories to preserve precious memories.",
+        link: "/portfolio/chronicle"
     },
     {
         image: Ajax,
         tags: ["Digital Art", "Programming"],
         title: "Sculpture",
         date: "Fall 2021",
-        description: "Custom ray-tracing algorithm for dielectric, matte, and reflective surfaces."
+        description: "Custom ray-tracing algorithm for dielectric, matte, and reflective surfaces.",
+        link: "/portfolio/sculpture"
     },
     {
         image: Marble,
         tags: ["Digital Art", "Programming"],
         title: "Marbles",
         date: "Fall 2021",
-        description: "Custom ray-tracing algorithm for dielectric, matte, and reflective surfaces."
+        description: "Custom ray-tracing algorithm for dielectric, matte, and reflective surfaces.",
+        link: "/portfolio/marbles"
     },
     {
         image: Tree,
         tags: ["Digital Art", "Programming"],
         title: "Tree",
         date: "Spring 2019",
-        description: "A simple tree created using recursive programming in Processing (Java based language)."
+        description: "A simple tree created using recursive programming in Processing (Java based language).",
+        link: "/portfolio/tree"
     }
 
 ]
