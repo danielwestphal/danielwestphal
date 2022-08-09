@@ -17,9 +17,7 @@ img.project {
     min-width: 100%;
     min-height: 100%;
     margin: auto;
-    border-radius: 5px;
-    box-shadow: 0 0 1px white;
-
+    outline: 1px solid var(--font-color)
 }
 
 .blur {
@@ -35,7 +33,6 @@ div.info {
     right: 12.5%;
     background-color: white;
     z-index: 2;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 div.sticky {

@@ -8,7 +8,7 @@
 }
 
 .Home {
-    background: #222135;
+    background: var(--background-color);
     min-height: 100vh;
     width: 100vw;
     display: inline-block;
@@ -43,7 +43,7 @@
 }
 
 
-img {
+img, svg {
     margin: 5%;
     margin-right: 1%;
     margin-top: auto;
@@ -52,6 +52,10 @@ img {
     width: 4vw;
     height: 4vw;
     vertical-align: middle;
+}
+
+svg.contacts {
+    stroke: var(--font-color);
 }
 
 .info {
