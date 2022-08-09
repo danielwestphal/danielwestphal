@@ -11,7 +11,7 @@
 }
 
 .name {
-    color: white;
+    color: var(--font-color);
     width: 20vw;
     height: 10vh;
     left: 0px;
@@ -29,7 +29,7 @@ img.logo {
 }
 
 a {
-    color: white;
+    color: var(--font-color);
     font-family: "Sarabun";
     font-weight: normal;
     font-size: 1.7vw;
@@ -46,6 +46,6 @@ a:hover {
 }
 
 a.selected {
-    color: #EE5F5F;
+    color: var(--accent);
     font-weight: 600;
 }

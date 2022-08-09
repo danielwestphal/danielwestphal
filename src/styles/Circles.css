@@ -14,7 +14,8 @@
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--font-color);
+    opacity: 0.2;
     animation: circ_animate 25s linear infinite;
     bottom: -150px;
     transition-property: background-color;
@@ -22,7 +23,7 @@
 }
 
 .circles li:hover {
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: var(--accent);
 }
 
 .circles li:nth-child(1) {
