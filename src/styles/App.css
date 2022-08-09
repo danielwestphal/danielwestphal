@@ -63,6 +63,12 @@ button {
   pointer-events: visible;
 }
 
+* {
+    transition-property: background-color,
+    color, stroke, fill;
+    transition-duration: 500ms;
+}
+
 button:hover {
   color: var(--font-color);
   background-color: var(--background-color);

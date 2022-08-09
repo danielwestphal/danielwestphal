@@ -3,7 +3,6 @@ import '../styles/App.css'
 import '../styles/Portfolio.css'
 import NavBar from "../components/NavBar"
 import Project from '../components/Project'
-import check from "../images/check.svg"
 import { portfolio } from '../data/portfolio'
 
 export default function Portfolio(props) {
@@ -50,19 +49,23 @@ export default function Portfolio(props) {
             <div className='filters'>
                 <button className={digitalArt ? 'filter_clicked' : 'filter'} onClick={toggleDA}>
                     <div className='text'>
-                        {digitalArt && <img className="check" src={check} alt="check"></img>}
+                        {digitalArt && <svg className="check" width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 8.94167L9.30435 16.875L23 2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>}
                         Digital Art
                     </div>
                 </button>
                 <button className={UIUX ? 'filter_clicked' : 'filter'} onClick={toggleUIUX}>
                     <div className='text'>
-                        {UIUX && <img className="check" src={check} alt="check"></img>}
+                        {UIUX && <svg className="check" width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 8.94167L9.30435 16.875L23 2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" /></svg>}
                         UI / UX
                     </div>
                 </button>
                 <button className={program ? 'filter_clicked' : 'filter'} onClick={toggleProgram}>
                     <div className='text'>
-                        {program && <img className="check" src={check} alt="check"></img>}
+                        {program && <svg className="check" width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 8.94167L9.30435 16.875L23 2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" /></svg>}
                         Programming
                     </div>
                 </button>

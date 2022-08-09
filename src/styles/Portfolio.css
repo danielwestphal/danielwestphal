@@ -74,12 +74,13 @@ button.filter {
     }
 }
 
-img.check {
+svg.check {
     height: 1.5vw;
     object-fit: contain;
     margin-top: auto;
     margin-bottom: auto;
     padding: auto;
+    stroke: var(--font-color)
 }
 
 button.filter_clicked {
