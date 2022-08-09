@@ -3,7 +3,6 @@ import '../styles/App.css'
 import '../styles/Portfolio.css'
 import NavBar from "../components/NavBar"
 import Project from '../components/Project'
-import ArrowUp from "../components/ArrowUp"
 import check from "../images/check.svg"
 import { portfolio } from '../data/portfolio'
 
@@ -84,7 +83,10 @@ export default function Portfolio(props) {
                     </h3>
                 </div>}
             {filtered_portfolio.length !== 0 && <div onClick={() => goTo(nextSection)} style={{ cursor: 'pointer' }}>
-                <ArrowUp />
+                <svg className="uparrow" width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.1673 36.5L16.4561 40.7888L33.459 23.8163L33.459 60.8334L39.5423 60.8334L39.5423 23.8163L56.5148 40.8192L60.834 36.5L36.5007 12.1667L12.1673 36.5Z" />
+                </svg>
+
                 <h3>Return to Top</h3>
             </div>}
 
