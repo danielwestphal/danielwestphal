@@ -56,7 +56,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 export default function NavBar(props) {
 
-    const [checked, setChecked] = React.useState(localStorage.getItem("theme") === "light");
+    const [checked, setChecked] = React.useState(localStorage.getItem("theme") === "dark");
 
     const setDark = () => {
 
@@ -140,6 +140,7 @@ export default function NavBar(props) {
                     control={<MaterialUISwitch sx={{ m: 1 }} />}
                     onChange={toggleTheme}
                     checked={checked}
+                    defaultChecked={defaultDark}
 
                 />
             </div>
