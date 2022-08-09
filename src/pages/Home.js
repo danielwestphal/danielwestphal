@@ -27,7 +27,7 @@ export default function Home(props) {
                 <h1 id="name">Hi, I'm <em className="accent">Daniel</em></h1>
                 <h2 id="title">Software Engineer & Designer </h2>
                 <p id="bio">
-                    I'm interested in how universal design can help to alleviate societal issues.
+                    I'm interested designing software that will make an impact.
                     <br />
                     <br />
                     Currently looking for <b>full time software engineering positions for 2023!</b>
