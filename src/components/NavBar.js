@@ -56,8 +56,6 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 export default function NavBar(props) {
 
-    const [checked, setChecked] = React.useState(localStorage.getItem("theme") === "dark");
-
     const setDark = () => {
 
         // 2
@@ -81,6 +79,8 @@ export default function NavBar(props) {
 
     const defaultDark =
         storedTheme === "dark" || (storedTheme === null && prefersDark);
+
+    const [checked, setChecked] = React.useState(prefersDark || localStorage.getItem("theme") === "dark");
 
     if (defaultDark) {
         setDark();
