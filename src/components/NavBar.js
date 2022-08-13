@@ -85,7 +85,6 @@ export default function NavBar(props) {
     if (defaultDark) {
         setDark();
     }
-    console.log(localStorage.getItem("theme"))
 
     // 5
     const toggleTheme = (e) => {

@@ -2,7 +2,7 @@
 @import "../fonts/caveat.css";
 
 body {
-  background-color: #222135;
+  background-color: var(--background-color);
 }
 
 h1 {
@@ -133,7 +133,7 @@ a {
 }
 
 a:focus {
-  outline: 1px red solid;
+  outline: 1px var(--font-color) dashed;
 }
 
 h4 {

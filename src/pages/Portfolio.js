@@ -11,31 +11,35 @@ export default function Portfolio(props) {
         ref.current.scrollIntoView({ behavior: "smooth", })
     }
 
-    const [digitalArt, setDigitalArt] = React.useState(true);
-
-    const toggleDA = () => {
-        setDigitalArt(!digitalArt);
+    const getTags = () => {
+        let tags = [];
+        for (let proj of portfolio){
+            for (let tag of proj.tags){
+                if (!(tags.includes(tag))){
+                    tags.push(tag);
+                }
+            }
+        }
+        return tags;
     }
 
-    const [UIUX, setUIUX] = React.useState(true);
+    const standTags = getTags();
 
-    const toggleUIUX = () => {
-        setUIUX(!UIUX);
-    }
+    const [buttons, setButtons] = React.useState(Array(standTags.length).fill(true));
 
-    const [program, setProgram] = React.useState(true);
-
-    const toggleProgram = () => {
-        setProgram(!program);
+    const toggleButton = (i) => {
+        let copy = [...buttons];
+        copy[i] = ! copy[i];
+        setButtons(copy);
     }
 
     const filtered_portfolio = portfolio.filter(proj => {
-        let tags = [];
-        if (digitalArt) tags.push("Digital Art");
-        if (UIUX) tags.push("UI / UX");
-        if (program) tags.push("Programming");
+        const tags = standTags;
+
+        const validTags = tags.filter((e,i) => {if (buttons[i]) return true; else return false})
+
         for (const x of proj.tags) {
-            for (const t of tags) {
+            for (const t of validTags) {
                 if (x === t) return true;
             }
         }
@@ -47,28 +51,17 @@ export default function Portfolio(props) {
             <NavBar selected="Portfolio" />
             <h1 className='title'> <em> Projects</em> I've worked on</h1>
             <div className='filters'>
-                <button className={digitalArt ? 'filter_clicked' : 'filter'} onClick={toggleDA}>
-                    <div className='text'>
-                        {digitalArt && <svg className="check" width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 8.94167L9.30435 16.875L23 2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>}
-                        Digital Art
-                    </div>
-                </button>
-                <button className={UIUX ? 'filter_clicked' : 'filter'} onClick={toggleUIUX}>
-                    <div className='text'>
-                        {UIUX && <svg className="check" width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 8.94167L9.30435 16.875L23 2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" /></svg>}
-                        UI / UX
-                    </div>
-                </button>
-                <button className={program ? 'filter_clicked' : 'filter'} onClick={toggleProgram}>
-                    <div className='text'>
-                        {program && <svg className="check" width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 8.94167L9.30435 16.875L23 2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" /></svg>}
-                        Programming
-                    </div>
-                </button>
+                {standTags.map((e,i) => {
+                    return (<button className={buttons[i] ? 'filter_clicked' : 'filter'} onClick={() => toggleButton(i)}>
+                        <div className='text'>
+                            {buttons[i] && <svg className="check" width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 8.94167L9.30435 16.875L23 2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" /></svg>}
+                            {e}
+                        </div>
+                    </button>)
+                })}
+                
+               
             </div>
             <div className='projects'>
                 {filtered_portfolio.map((proj, i) => { return (<Project data={proj} key={i} />) })}
