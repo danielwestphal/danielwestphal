@@ -32,7 +32,7 @@ export const portfolio = [
         tags: ["Programming"],
         title: "Sudoku Solver",
         date: "May - June 2022 (3 weeks)",
-        people: "Me, Abigail Owen",
+        people: "Me, Three Others",
         class: "COSC 50: Software Design & Implementation",
         tools: "C, Bash, Git",
         description: "Sudoku solver and creator utilizing TCP server/client architecture.",
