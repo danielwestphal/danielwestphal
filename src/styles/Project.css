@@ -1,147 +1,217 @@
 @import "../fonts/sarabun.css";
 
-div.project {
-    width: 20vw;
-    height: 20vw;
-    margin: auto;
-    margin-top: 1vw;
+a.project {
+    margin-top: 0.5vw;
     margin-bottom: 1vw;
+    background-color: none;
+}
+
+div.project {
+    width: 38vw;
+    height: 23vw;
+    margin: auto;
     position: relative;
     cursor: pointer;
+    background-color: var(--font-color);
+    border-radius: 5px;
+    z-index: -2;
+}
+
+a.project:hover {
+    transform: translateY(-3px);
 }
 
 img.project {
-    width: 20vw;
-    height: 20vw;
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     margin: auto;
-    outline: 1px solid var(--font-color)
-}
-
-.blur {
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
-}
-
-div.info {
     position: absolute;
-    width: 75%;
-    height: 75%;
-    bottom: 12.5%;
-    right: 12.5%;
-    background-color: white;
-    z-index: 2;
-}
-
-div.sticky {
-    position: absolute;
-    width: 20%;
-    height: 10%;
-    top: -5%;
+    top: 0;
     left: 0;
     right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #212121;
-    opacity: 0.8;
-    z-index: 3;
-    transform: rotate(-7deg);
+    bottom: 0;
+    width: auto;
+    height: auto;
 }
 
-h5.projTitle.projTitle {
+div.imageproject {
+    width: 46%;
+    height: 20vw;
+    right: 2%;
+    top: 0%;
+    bottom: 0%;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+h5.projTitle {
     font-family: "Sarabun";
     font-weight: 600;
     font-size: 2.5vw;
-    text-align: center;
+    color: var(--background-color);
 }
 
 h6 {
     font-family: "Sarabun";
-    font-weight: 400;
-    font-size: 1.5vw;
-    text-align: center;
+    font-weight: 600;
+    font-size: 1vw;
+    margin-left: .5vw;
+    margin-top: 1vw;
+    color: var(--icons);
 }
 
 p.description {
-    margin-top: 5%;
     font-family: "Sarabun";
     font-size: 1vw;
-    color: black;
-    text-align: center;
-
+    padding-left: 0;
+    margin: 0px;
+    margin-top: -1.5vw;
+    margin-left: 3.5vw;
+    font-weight: 600;
+    color: var(--icons);
 }
 
 div.information {
-    transform: translateY(15%);
-    color: black;
+    margin: 1%;
+    text-align: left;
+    width: 100%;
+    padding: 1%;
 }
 
-@media only screen and (max-width: 1100px) {
-    div.project {
-        width: 30vw;
-        height: 30vw;
-        margin: auto;
-        margin-top: 1vw;
-        margin-bottom: 1vw;
-        position: relative;
-    }
-
-    p.description {
-        margin-top: 5%;
-        font-family: "Sarabun";
-        font-size: 1.5vw;
-        color: black;
-        text-align: center;
-    }
-
-    h5.projTitle.projTitle {
-        font-family: "Sarabun";
-        font-weight: 600;
-        font-size: 3vw;
-        text-align: center;
-    }
-
-    h6 {
-        font-family: "Sarabun";
-        font-weight: 400;
-        font-size: 2vw;
-        text-align: center;
-    }
+div.subinformation {
+    width: 50%;
 }
+
+.text {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+h6.texti {
+    padding-left: 0;
+    margin: 0px;
+    margin-top: -1.5vw;
+    margin-left: 3.5vw;
+}
+
+svg.icon {
+    vertical-align: middle;
+    display: inline-block;
+    stroke: var(--icons);
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-top: 1vw;
+    padding: 0;
+}
+
+svg.fill {
+    fill: var(--icons);
+}
+
+div.no_space {
+    margin: 0;
+    padding: 0;
+}
+
 
 @media only screen and (max-width: 786px) {
     div.project {
-        width: 65vw;
-        height: 65vw;
+        width: 76vw;
+        height: 43vw;
         margin: auto;
-        margin-top: 1vw;
-        margin-bottom: 1vw;
         position: relative;
+        cursor: pointer;
+        background-color: var(--font-color);
+        border-radius: 5px;
+        z-index: -2;
     }
 
-    p.description {
-        margin-top: 5%;
-        font-family: "Sarabun";
-        font-size: 3vw;
-        color: black;
-        text-align: center;
+    a.project:hover {
+        transform: translateY(-3px);
+    }
+
+    img.project {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        height: auto;
+    }
+
+    div.imageproject {
+        width: 46%;
+        height: 40vw;
+        right: 2%;
+        top: 0%;
+        bottom: 0%;
+        margin-top: auto;
+        margin-bottom: auto;
+        position: absolute;
+        z-index: -1;
     }
 
     h5.projTitle {
         font-family: "Sarabun";
         font-weight: 600;
-        font-size: 8vw;
-        text-align: center;
-        color: black;
+        font-size: 5vw;
+        color: var(--background-color);
     }
 
     h6 {
         font-family: "Sarabun";
-        font-weight: 400;
-        font-size: 6vw;
-        text-align: center;
-        color: black;
+        font-weight: 600;
+        font-size: 2vw;
+        margin-left: 1vw;
+        color: var(--icons);
+    }
+
+    p.description {
+        font-family: "Sarabun";
+        font-size: 2vw;
+        padding-left: 0;
+        margin-top: -3vw;
+        margin-left: 7vw;
+        font-weight: 600;
+        color: var(--icons);
+    }
+
+    div.information {
+        margin: 1%;
+        text-align: left;
+        width: 100%;
+        padding: 1%;
+    }
+
+    div.subinformation {
+        width: 50%;
+    }
+
+    .text {
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    h6.texti {
+        padding-left: 0;
+        margin: 0px;
+        margin-left: 7vw;
+        margin-top: -3vw;
+    }
+
+    svg.icon {
+        vertical-align: middle;
+        display: inline-block;
+        stroke: var(--icons);
+        width: 3vw;
+        height: 3vw;
+        margin-top: 1vw;
+        padding: 0;
     }
 }

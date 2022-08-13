@@ -14,7 +14,7 @@
 }
 
 .filters {
-    width: 50vw;
+    width: 35vw;
     height: auto;
     margin-right: auto;
     margin-left: auto;
@@ -44,17 +44,17 @@ button.filter {
 }
 
 .projects {
-    width: 70vw;
+    width: 80vw;
     height: auto;
     margin: auto;
     padding: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 @media only screen and (max-width: 1100px) {
     .projects {
-        width: 70vw;
+        width: 80vw;
         height: auto;
         margin: auto;
         padding: auto;
@@ -65,7 +65,7 @@ button.filter {
 
 @media only screen and (max-width: 786px) {
     .projects {
-        width: 70vw;
+        width: 80vw;
         height: auto;
         margin: auto;
         padding: auto;
