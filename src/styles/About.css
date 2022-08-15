@@ -154,8 +154,9 @@ img.footprints:hover {
 img.footprints {
     position: absolute;
     transition: filter 1s ease;
-    height: min(8.5vw,16vh);
+    height: min(8.5vw, 16vh);
     z-index: -1;
+    pointer-events: all;
 
 }
 
@@ -170,5 +171,93 @@ img.footprints {
 
     100% {
         filter: brightness(1);
+    }
+}
+
+svg.fill {
+    fill: var(--font-color);
+}
+
+svg.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5vw;
+    height: 5vw;
+}
+
+svg.stroke {
+    stroke: var(--font-color);
+}
+
+div.family {
+    left: 9vw;
+    top: 24vh;
+}
+
+div.education {
+    left: 30vw;
+    top: 38vh;
+}
+
+div.work {
+    left: 52vw;
+    top: 26vh;
+}
+
+div.fun {
+    left: 74vw;
+    top: 40vh;
+}
+
+div.aboutme {
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    pointer-events: none;
+}
+
+p.about {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 786px) {
+    div.aboutme {
+        position: relative;
+        width: 100%;
+        height: auto;
+        pointer-events: none;
+        top: auto;
+        left: auto;
+        display: block;
+        margin: 0;
+        margin-bottom: 3vw;
+    }
+    
+    div.family {
+        margin-top: 4vw;
+    }
+
+    svg.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10vw;
+        height: 10vh;
+    }
+
+    p.about {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        padding: 10px;
+        font-size: 2.6vw;
+        font-weight: 600;
+        padding: 0;
     }
 }

@@ -106,7 +106,7 @@ svg.icon {
     padding: 0;
 }
 
-svg.fill {
+svg.fill_icon {
     fill: var(--icons);
 }
 
