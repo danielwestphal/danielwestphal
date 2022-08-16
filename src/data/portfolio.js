@@ -14,7 +14,17 @@ export const portfolio = [
         class: "Personal",
         tools: "React JS, CSS, Figma",
         description: "My very own personal website!",
-        link: "/portfolio/website"
+        link: "/portfolio/website",
+        page: {
+            overview: "hi",
+            links: {
+                github: "https://github.com/danielwestphal/danielwestphal",
+                figma: "https://www.figma.com/file/7bqWKjDGBYeyBMLNIxCUd0/Personal-Website?node-id=0%3A1"
+            },
+            structure: [
+                { type: "divider", title: "Process" }
+            ]
+        }
     },
     {
         image: Chronicle,
@@ -23,9 +33,19 @@ export const portfolio = [
         date: "April - June 2022 (3 weeks)",
         people: "Me, Justin Chong",
         class: "COSC 25.01: UI UX Design",
-        tools: "Figma",
+        tools: "Figma, UX Research",
         description: "A tablet app where family members can create collaborative digital stories to preserve precious memories.",
-        link: "/portfolio/chronicle"
+        link: "/portfolio/chronicle",
+        page: {
+            overview: "hi",
+            links: {
+                figma: "https://www.figma.com/file/UN2AQC525WpNJZtvke3sRk/Final_Chong_Westphal?node-id=203%3A3701",
+                medium: "https://medium.com/@daniel.e.westphal.23/chronicle-ffe2deadd2bf"
+            },
+            structure: [
+                { type: "divider", title: "Process" }
+            ]
+        }
     },
     {
         image: Sudoku,
@@ -36,7 +56,16 @@ export const portfolio = [
         class: "COSC 50: Software Design & Implementation",
         tools: "C, Bash, Git",
         description: "Sudoku solver and creator utilizing TCP server/client architecture.",
-        link: "/portfolio/sudoku"
+        link: "/portfolio/sudoku",
+        page: {
+            overview: "hi",
+            links: {
+                github: "mailto:dew.23@dartmouth.edu"
+            },
+            structure: [
+                { type: "divider", title: "Features" }
+            ]
+        }
     },
     {
         image: TSE,
@@ -47,7 +76,16 @@ export const portfolio = [
         class: "COSC 50: Software Design & Implementation",
         tools: "C, Bash",
         description: "A search engine that crawls through web pages, indexes them, and queries them.",
-        link: "/portfolio/tse"
+        link: "/portfolio/tse",
+        page: {
+            overview: "hi",
+            links: {
+                github: "mailto:dew.23@dartmouth.edu"
+            },
+            structure: [
+                {type: "divider", title: "Features"}
+            ]
+        }
     },
     {
         image: RayTracer,
@@ -58,7 +96,16 @@ export const portfolio = [
         class: "COSC 87: Rendering Algorithms",
         tools: "C++, Blender",
         description: "Custom ray-tracing algorithm to generate photorealistic images.",
-        link: "/portfolio/ray-tracer"
+        link: "/portfolio/ray-tracer",
+        page: {
+            overview: "hi",
+            links: {
+                github: "mailto:dew.23@dartmouth.edu"
+            },
+            structure: [
+                { type: "divider", title: "Features" }
+            ]
+        }
     }
 
 ]
