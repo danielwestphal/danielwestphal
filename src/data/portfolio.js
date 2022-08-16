@@ -14,7 +14,7 @@ export const portfolio = [
         class: "Personal",
         tools: "React JS, CSS, Figma",
         description: "My very own personal website!",
-        link: "/portfolio/chronicle"
+        link: "/portfolio/website"
     },
     {
         image: Chronicle,
@@ -58,7 +58,7 @@ export const portfolio = [
         class: "COSC 87: Rendering Algorithms",
         tools: "C++, Blender",
         description: "Custom ray-tracing algorithm to generate photorealistic images.",
-        link: "/portfolio/sculpture"
+        link: "/portfolio/ray-tracer"
     }
 
 ]

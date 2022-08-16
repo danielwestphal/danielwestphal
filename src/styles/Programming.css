@@ -1,0 +1,86 @@
+.Programming {
+    background: var(--background-color);
+    height: auto;
+    width: 100vw;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
+img.main {
+    margin-top: 8vh;
+    max-width: 65vw;
+    max-height: 65vw;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h1.main {
+    text-align: center;
+}
+
+h1.divider {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
+    display: block;
+    font-size: 4vw;
+    line-height: 8vw;
+    color: white;
+}
+
+div.seperator {
+    display: block;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 100vw;
+    height: 8vw;
+    background-color: var(--accent);
+}
+
+div.overview {
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+    width: 80vw;
+    height: 27vw;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 0.66fr;
+}
+
+div.overview_info {
+    width: auto;
+    height: auto;
+    grid-row: 1 / span 3;
+}
+
+p.overview {
+    margin: 0;
+    padding: 0;
+}
+
+p.title {
+    margin-bottom: 1vw;
+}
+
+div.proj_links {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vw;
+    width: 80vw;
+    text-align: center;
+}
+
+svg.stroke {
+    stroke: var(--font-color);
+    vertical-align: middle;
+    display: inline-block;
+}

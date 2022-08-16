@@ -4,6 +4,9 @@ a.project {
     margin-top: 0.5vw;
     margin-bottom: 1vw;
     background-color: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 div.project {
