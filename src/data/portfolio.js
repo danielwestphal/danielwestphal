@@ -43,7 +43,8 @@ export const portfolio = [
                 medium: "https://medium.com/@daniel.e.westphal.23/chronicle-ffe2deadd2bf"
             },
             structure: [
-                { type: "divider", title: "Process" }
+                { type: "divider", title: "Process" },
+                { type: "section", title: "User Interviews", subtitle: "Who we spoke to and what we learned", description: "descroption!"},
             ]
         }
     },
@@ -83,7 +84,10 @@ export const portfolio = [
                 github: "mailto:dew.23@dartmouth.edu"
             },
             structure: [
-                {type: "divider", title: "Features"}
+                {type: "divider", title: "Features"},
+                { type: "section", title: "Crawler", subtitle: "./crawler seedURL pageDirectory max_depth", description: "descroption!" },
+                { type: "section", title: "Indexer", subtitle: "./indexer pageDirectory indexFilename", description: "descroption!" },
+                { type: "section", title: "Querier", subtitle: "./querier pageDirectory indexFilename", description: "descroption!" }
             ]
         }
     },

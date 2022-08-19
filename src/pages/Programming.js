@@ -114,6 +114,7 @@ export default function Programming(props) {
         </div>
         {page.structure.map(e => {
             if (e.type === "divider") return <Divider title={e.title} />
+            else if (e.type === "section") return <Section title={e.title} subtitle={e.subtitle} description={e.description} />
             return <span></span>;
         })}
 
@@ -130,6 +131,20 @@ export function Divider(props) {
     return (
         <div className='seperator'>
             <h1 className='main divider'> {props.title} </h1>
+        </div>
+    )
+}
+
+export function Section(props) {
+    return (
+        <div className='section'>
+            <div className='titles'>
+                <p className='overview align bar'><b>{props.title}</b></p>
+                <p className='suboverview align'>{props.subtitle}</p>
+            </div>
+            <div className='descriptor'>
+                <p className='descriptor'>{props.description}</p>
+            </div>
         </div>
     )
 }
