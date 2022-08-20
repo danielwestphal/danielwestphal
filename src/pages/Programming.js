@@ -115,6 +115,7 @@ export default function Programming(props) {
         {page.structure.map(e => {
             if (e.type === "divider") return <Divider title={e.title} />
             else if (e.type === "section") return <Section title={e.title} subtitle={e.subtitle} description={e.description} />
+            else if (e.type === "centerImage") return <CenterImage image={e.image} alt={e.alt} caption={e.caption} />
             return <span></span>;
         })}
 
@@ -146,5 +147,14 @@ export function Section(props) {
                 <p className='descriptor'>{props.description}</p>
             </div>
         </div>
+    )
+}
+
+export function CenterImage(props) {
+    return (
+        <figure>
+            <img className='centerImage' src={props.image} alt={props.alt} />
+            <figcaption> {props.caption} </figcaption>
+        </figure>
     )
 }

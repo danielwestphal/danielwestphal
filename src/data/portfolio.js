@@ -3,6 +3,10 @@ import Chronicle from "../images/portfolio/chronicle.png"
 import Portfolio from "../images/portfolio/portfolio.png"
 import Sudoku from "../images/portfolio/sudoku.png"
 import TSE from "../images/portfolio/tse.png"
+import TSECrawler from "../images/portfolio/tse/crawler.png"
+import TSEIndexer from "../images/portfolio/tse/indexer.png"
+import TSEIndexerFile from "../images/portfolio/tse/indexer_file.png"
+import TSEQuerier from "../images/portfolio/tse/querier.png"
 
 export const portfolio = [
     {
@@ -44,7 +48,7 @@ export const portfolio = [
             },
             structure: [
                 { type: "divider", title: "Process" },
-                { type: "section", title: "User Interviews", subtitle: "Who we spoke to and what we learned", description: "descroption!"},
+                { type: "section", title: "User Interviews", subtitle: "Who we spoke to and what we learned", description: "descroption!" },
             ]
         }
     },
@@ -79,15 +83,53 @@ export const portfolio = [
         description: "A search engine that crawls through web pages, indexes them, and queries them.",
         link: "/portfolio/tse",
         page: {
-            overview: "hi",
+            overview: "This Tiny Search Engine (tse) was made for my final individual project for COSC 50. The purpose of the tse is to simulate how search engines work (albeit on a smaller and simpler scale). The tse is able to crawl through and download webpages from a source, index the words on those pages, and then query and rank the pages based off of search terms. Testing was implemented for every component.",
             links: {
                 github: "mailto:dew.23@dartmouth.edu"
             },
             structure: [
-                {type: "divider", title: "Features"},
-                { type: "section", title: "Crawler", subtitle: "./crawler seedURL pageDirectory max_depth", description: "descroption!" },
-                { type: "section", title: "Indexer", subtitle: "./indexer pageDirectory indexFilename", description: "descroption!" },
-                { type: "section", title: "Querier", subtitle: "./querier pageDirectory indexFilename", description: "descroption!" }
+                { type: "divider", title: "Features" },
+                {
+                    type: "section",
+                    title: "Crawler",
+                    subtitle: "./crawler seedURL pageDirectory max_depth",
+                    description: "The crawler takes in a designated seedURL and crawls all pages reachable from that URL up to a specified max_depth. The HTML files of the website that it crawls through are saved to the pageDirectory."
+                },
+                {
+                    type: "centerImage",
+                    image: TSECrawler,
+                    alt: "Crawler Demo",
+                    caption: "The output of the crawler running on a contained seed url"
+                },
+                {
+                    type: "section",
+                    title: "Indexer",
+                    subtitle: "./indexer pageDirectory indexFilename",
+                    description: "The TSE indexer is a standalone program that reads the document files produced by the TSE crawler, builds an index, and writes that index to a file. An index contains a count of how many time every word appears in each page."
+                },
+                {
+                    type: "centerImage",
+                    image: TSEIndexer,
+                    alt: "Crawler Demo",
+                    caption: "The output of the indexer running on the crawled webpages from above"
+                },
+                {
+                    type: "centerImage",
+                    image: TSEIndexerFile,
+                    alt: "Crawler Output File",
+                    caption: "The output.out file generated; we see webpage number 4 contains the word eniac one time"
+                },
+                {
+                    type: "section", title: "Querier",
+                    subtitle: "./querier pageDirectory indexFilename",
+                    description: "The TSE Querier reads the index produced by the Indexer and the page files produced by the Crawler, to interactively answer written queries entered by the user. Queries can contain logic (e.g. dogs OR cats, dogs AND cats) and results are returned to the user ranked."
+                },
+                {
+                    type: "centerImage",
+                    image: TSEQuerier,
+                    alt: "Querier Demo",
+                    caption: "The output of the querier; fuzzquery generates random queries to search for to facilitate testing"
+                }
             ]
         }
     },
