@@ -44,6 +44,7 @@ import Oren20 from "../images/portfolio/raytracer/final/Oren20.png"
 import Oren100 from "../images/portfolio/raytracer/final/Oren100.png"
 import Final from "../images/portfolio/raytracer/final/Final.png"
 import ShinyGeometry from "../images/portfolio/raytracer/final/ShinyGeometry.png"
+import Stakeholders from "../images/portfolio/chronicle/Stakeholders.png"
 
 export const portfolio = [
     {
@@ -78,14 +79,67 @@ export const portfolio = [
         description: "A tablet app where family members can create collaborative digital stories to preserve precious memories.",
         link: "/portfolio/chronicle",
         page: {
-            overview: "This page is under development",
+            overview: "For our final in UI/UX Design, we embarked on a project to design a digital application to bridge generations. We began by conducting user experience research. Then we created grayscales before making a style guide and adding color. After we developed our initial Figma prototype we conducted user testing. We made revisions based on feedback and then presented our final design at Dartmouth’s Technigala.",
             links: {
                 figma: "https://www.figma.com/file/UN2AQC525WpNJZtvke3sRk/Final_Chong_Westphal?node-id=203%3A3701",
                 medium: "https://medium.com/@daniel.e.westphal.23/chronicle-ffe2deadd2bf"
             },
             structure: [
-                { type: "divider", title: "Process" },
-                { type: "section", title: "User Interviews", subtitle: "Who we spoke to and what we learned", description: "descroption!" },
+                {
+                    type: "divider",
+                    title: "Process"
+                },
+                {
+                    type: "section",
+                    title: "Overview",
+                    subtitle: "Shedding more light on the generational divide",
+                    description: "We conducted sociological, quantitative, and qualitative research on the differences and similarities between four key generations: Baby Boomers, Generation X, Millennials, and Generation Z. We found that Boomers as a whole tend to use technology to help create their desired lifestyle rather than allowing technology to shape their whole existence. Generation Z has grown up with digital technology their whole lives and tend to learn more through direct observation and active hands-on participation."
+                },
+                {
+                    type: "emptySection",
+                    description: "Our challenge was to create an interface that adapted to the needs and expectations of two vastly different generations with stark contrasts in technological literacy."
+                },
+                {
+                    type: "emptySection",
+                    description: "This lead us to our three design specifications"
+                },
+                {
+                    type: "section",
+                    title: "Accessible",
+                    subtitle: "Our first specification",
+                    description: "We want our interface to be accessible to users of all age groups, as well as for those with color vision deficiency"
+                },
+                {
+                    type: "section",
+                    title: "Delightful",
+                    subtitle: "Our second specification",
+                    description: "We strive to bring users an effortless sense of delight and joy, capturing the essence of childlike wonder"
+                },
+                {
+                    type: "section",
+                    title: "Intuitive",
+                    subtitle: "Our third specification",
+                    description: "For our target audience of grandparents and grandchildren, we want our user flows to be intuitive and frictionless"
+                },
+                {
+                    type: "divider",
+                    title: "User Experience (UX) Research"
+                },
+                {
+                    type: "section", title: "Stakeholders",
+                    subtitle: "Who should we make sure to consider during the design process",
+                    description: "We started by creating a stakeholder matrix to better visualize the people and organizations involved in intergenerational communication."
+                },
+                {
+                    type: "inlineImage",
+                    image: Stakeholders,
+                    caption: "Stakeholder Map based on Power and Interest"
+                },
+                {
+                    type: "section", title: "User Interviews",
+                    subtitle: "Who we spoke to and what we learned",
+                    description: "descroption!"
+                },
             ]
         }
     },
