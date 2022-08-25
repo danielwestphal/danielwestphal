@@ -651,7 +651,7 @@ export const portfolio = [
     {
         image: RayTracer,
         tags: ["Programming"],
-        title: "Ray-Tracer",
+        title: "Ray Tracer",
         date: "September - November 2021 (10 weeks)",
         people: "Me, Abigail Owen",
         class: "COSC 87: Rendering Algorithms",
