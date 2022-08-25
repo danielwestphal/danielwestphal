@@ -56,8 +56,8 @@ export default function About(props) {
 
                 </div>
 
-                <div className='workcon aboutme'>
-                    <svg className='stroke center' width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div className='work aboutme'>
+                    <svg className='strokeish center' width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M83.334 29.167H16.6673C12.0649 29.167 8.33398 32.898 8.33398 37.5003V79.167C8.33398 83.7694 12.0649 87.5003 16.6673 87.5003H83.334C87.9364 87.5003 91.6673 83.7694 91.6673 79.167V37.5003C91.6673 32.898 87.9364 29.167 83.334 29.167Z" stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M66.6673 87.5V20.8333C66.6673 18.6232 65.7893 16.5036 64.2265 14.9408C62.6637 13.378 60.5441 12.5 58.334 12.5H41.6673C39.4572 12.5 37.3376 13.378 35.7748 14.9408C34.212 16.5036 33.334 18.6232 33.334 20.8333V87.5" stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>

@@ -190,6 +190,10 @@ svg.stroke {
     stroke: var(--font-color);
 }
 
+svg.strokeish {
+    stroke: var(--font-color);
+}
+
 div.family {
     left: 9vw;
     top: 24vh;
@@ -200,7 +204,7 @@ div.education {
     top: 38vh;
 }
 
-div.workcon {
+div.work {
     left: 52vw;
     top: 26vh;
 }
