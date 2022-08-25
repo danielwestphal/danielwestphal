@@ -67,6 +67,12 @@ import Hifi3 from "../images/portfolio/chronicle/Hifi3.png"
 import Hifi4 from "../images/portfolio/chronicle/Hifi4.png"
 import Final0 from "../images/portfolio/chronicle/Final0.png"
 import Final1 from "../images/portfolio/chronicle/Final1.png"
+import Creator from "../images/portfolio/sudoku/creator.png"
+import GUI from "../images/portfolio/sudoku/GUI.png"
+import Play from "../images/portfolio/sudoku/play.png"
+import Server from "../images/portfolio/sudoku/server.png"
+import ServerOutput from "../images/portfolio/sudoku/serveroutput.png"
+import Solver from "../images/portfolio/sudoku/solver.png"
 
 
 export const portfolio = [
@@ -81,13 +87,12 @@ export const portfolio = [
         description: "My very own personal website!",
         link: "/portfolio/website",
         page: {
-            overview: "This page is under development",
+            overview: "This is my very own personal website! Take a look at how I designed and built it here by checking out the Figma page and GitHub repository.",
             links: {
                 github: "https://github.com/danielwestphal/danielwestphal",
                 figma: "https://www.figma.com/file/7bqWKjDGBYeyBMLNIxCUd0/Personal-Website?node-id=0%3A1"
             },
             structure: [
-                { type: "divider", title: "Process" }
             ]
         }
     },
@@ -512,12 +517,73 @@ export const portfolio = [
         description: "Sudoku solver and creator utilizing TCP server/client architecture.",
         link: "/portfolio/sudoku",
         page: {
-            overview: "This page is under development",
+            overview: "For our final project for CS50, my group of four was assigned to build a sudoku creator (that would generate a board with only one solution) and solver. I was responsible for implementing the sudoku solver, server/client architecture, and larder size boards. Testing was also implemented.",
             links: {
                 github: "mailto:dew.23@dartmouth.edu"
             },
             structure: [
-                { type: "divider", title: "Features" }
+                { type: "divider", title: "Features" },
+                {
+                    type: "section",
+                    title: "Solver",
+                    subtitle: "./sudoku solver",
+                    description: "The sudoku solver solves any size sudoku board. The user inputs the size of the board and the board itself and the program outputs a solution for it. It finds a solution by iterating through the board and when it finds an empty tile collecting all the possible digits that could go there. It then chooses a digit at random and continues. If a solution does not exist it backtracks and tries a new number. If there are no more possible numbers it returns that there's no solution."
+                },
+                {
+                    type: "inlineImage",
+                    image: Solver,
+                    caption: "A sample usage of the solver"
+                },
+                {
+                    type: "section",
+                    title: "Creator",
+                    subtitle: "./sudoku create",
+                    description: "The creator uses the solver to generate new sudoku boards. It starts by getting a filled in sudoku board by passing an empty board to the solver. Then it randomly chooses tiles and sees if there is still a unique solution for the board if you were to remove it. If there would still be a unique solution, it removes it and continues."
+                },
+                {
+                    type: "inlineImage",
+                    image: Creator,
+                    caption: "A sample usage of the creator"
+                },
+                {
+                    type: "section",
+                    title: "Client / Server",
+                    subtitle: "./sudoku_server",
+                    description: "We integrated the creator with a server. The client (user) sends a request to the server with the size of the sudoku board and then the server creates a board of that size and sends it back."
+                },
+                {
+                    type: "inlineImage",
+                    image: Server,
+                    caption: "The server uses a TCP architecture and the Berkeley Sockets API"
+                },
+                {
+                    type: "inlineImage",
+                    image: ServerOutput,
+                    caption: "The server outputs logging information to show its progress"
+                },
+                {
+                    type: "section",
+                    title: "Play Mode",
+                    subtitle: "./sudoku play",
+                    description: "We also created a 'play' mode that allows the user to actively solve a solution in real time."
+                },
+                {
+                    type: "inlineImage",
+                    image: Play,
+                    caption: "A sample play mode"
+                },
+                {
+                    type: "section",
+                    title: "GUI",
+                    subtitle: "the interface we made to visualize the process",
+                    description: "Lastly, we created a GUI in Python so that people could see the sudoku board in a nicer format than the command line."
+                },
+                {
+                    type: "inlineImage",
+                    image: GUI,
+                    caption: "The GUI showing a solved sudoku board; it shows the difference between user inputted numbers and numbers that are parts of the board"
+                },
+
             ]
         }
     },
