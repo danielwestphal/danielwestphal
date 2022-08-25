@@ -37,6 +37,11 @@ export default function Project(props) {
                 <div className='imageproject'>
                     <img className='project' src={project.image} alt={project.title} />
                 </div>
+                <div className='tags'>
+                    <p className='tag'>
+                        {project.tags.join(', ')}
+                    </p>
+                </div>
                 <div className='information'>
                     <h5 className='projTitle'>
                         {project.title}

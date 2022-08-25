@@ -9,8 +9,18 @@
     position: relative;
     margin: 0px;
     padding: 0px;
-    z-index: 1;
+    z-index: 0;
     overflow-y: scroll;
+}
+
+div.background {
+    background-image: url("../images/background.svg");
+    width: 100vw;
+    height: 93%;
+    top: 10vw;
+    z-index: -20;
+    background-repeat: repeat-y;
+    position:absolute;
 }
 
 .filters {
@@ -43,6 +53,24 @@ button.filter {
     transition: background-color 300ms linear;
 }
 
+button.filter_clicked {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 0;
+    padding-right: 2vw;
+    width: auto;
+    height: auto;
+    border-radius: 500px;
+    height: 4vw;
+    align-items: center;
+    background-color: var(--font-color);
+    color: var(--background-color);
+}
+
 .projects {
     width: 80vw;
     height: auto;
@@ -50,6 +78,7 @@ button.filter {
     padding: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    z-index: 2;
 }
 
 
@@ -72,6 +101,15 @@ svg.check {
     margin-bottom: auto;
     padding: auto;
     stroke: var(--font-color)
+}
+
+svg.check_clicked {
+    height: 1.5vw;
+    object-fit: contain;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: auto;
+    stroke: var(--background-color)
 }
 
 button.filter_clicked {
