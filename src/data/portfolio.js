@@ -39,7 +39,12 @@ import JensenBoxNEE from "../images/portfolio/raytracer/5/JensenBoxNEE.png"
 import OdysseyMIS from "../images/portfolio/raytracer/5/OdysseyMIS.png"
 import VeachMIS from "../images/portfolio/raytracer/5/VeachMIS.png"
 import VeachNEE from "../images/portfolio/raytracer/5/VeachNEE.png"
-
+import Clock from "../images/portfolio/raytracer/final/Clock.png"
+import Oren0 from "../images/portfolio/raytracer/final/Oren0.png"
+import Oren20 from "../images/portfolio/raytracer/final/Oren20.png"
+import Oren100 from "../images/portfolio/raytracer/final/Oren100.png"
+import Final from "../images/portfolio/raytracer/final/Final.png"
+import ShinyGeometry from "../images/portfolio/raytracer/final/ShinyGeometry.png"
 
 export const portfolio = [
     {
@@ -129,7 +134,7 @@ export const portfolio = [
                     description: "The crawler takes in a designated seedURL and crawls all pages reachable from that URL up to a specified max_depth. The HTML files of the website that it crawls through are saved to the pageDirectory."
                 },
                 {
-                    type: "centerImage",
+                    type: "inlineImage",
                     image: TSECrawler,
                     alt: "Crawler Demo",
                     caption: "The output of the crawler running on a contained seed url"
@@ -141,13 +146,13 @@ export const portfolio = [
                     description: "The TSE indexer is a standalone program that reads the document files produced by the TSE crawler, builds an index, and writes that index to a file. An index contains a count of how many time every word appears in each page."
                 },
                 {
-                    type: "centerImage",
+                    type: "inlineImage",
                     image: TSEIndexer,
                     alt: "Crawler Demo",
                     caption: "The output of the indexer running on the crawled webpages from above"
                 },
                 {
-                    type: "centerImage",
+                    type: "inlineImage",
                     image: TSEIndexerFile,
                     alt: "Crawler Output File",
                     caption: "The output.out file generated; we see webpage number 4 contains the word eniac one time"
@@ -158,7 +163,7 @@ export const portfolio = [
                     description: "The TSE Querier reads the index produced by the Indexer and the page files produced by the Crawler, to interactively answer written queries entered by the user. Queries can contain logic (e.g. dogs OR cats, dogs AND cats) and results are returned to the user ranked."
                 },
                 {
-                    type: "centerImage",
+                    type: "inlineImage",
                     image: TSEQuerier,
                     alt: "Querier Demo",
                     caption: "The output of the querier; fuzzquery generates random queries to search for to facilitate testing"
@@ -441,8 +446,45 @@ export const portfolio = [
                 {
                     type: "section", title: "Final Project",
                     subtitle: "Adding additional functionality and creating our own scene (partner project)",
-                    description: "enter here"
-                }
+                    description: "The theme for the final project was 'it's what's on the inside that counts'. My partner and I decided to create a scene of a person looking into a mirror and seeing their own skeleton. We also implemented some new features, including a disk feature with texture mapping."
+                },
+                {
+                    type: "inlineImage",
+                    image: Clock,
+                    caption: "A disk shape with a clock texture mapped to it"
+                },
+                {
+                    type: "emptySection",
+                    description: "We also created microfacet textures, which are textures that occur when light gets trapped in the surface of a rough material."
+                },
+                {
+                    type: "inlineImage",
+                    image: Oren20,
+                    caption: "Microfacet material with a low roughness coefficient"
+                },
+                {
+                    type: "inlineImage",
+                    image: Oren100,
+                    caption: "Microfacet material with a high roughness coefficient"
+                },
+                {
+                    type: "emptySection",
+                    description: "We also implemented a shinier metal material"
+                },
+                {
+                    type: "inlineImage",
+                    image: ShinyGeometry,
+                    caption: "Shiny chromatic material"
+                },
+                {
+                    type: "emptySection",
+                    description: "We put these all together to create our final render. We created the scene ourselves using Blender."
+                },
+                {
+                    type: "inlineImage",
+                    image: Final,
+                    caption: "The final render"
+                },
             ]
         }
     }
