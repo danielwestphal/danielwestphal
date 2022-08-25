@@ -116,6 +116,8 @@ export default function Programming(props) {
             if (e.type === "divider") return <Divider title={e.title} />
             else if (e.type === "section") return <Section title={e.title} subtitle={e.subtitle} description={e.description} />
             else if (e.type === "centerImage") return <CenterImage image={e.image} alt={e.alt} caption={e.caption} />
+            else if (e.type === "inlineImage") return <ImageInline image={e.image} alt={e.alt} caption={e.caption} />
+            else if (e.type === "emptySection") return <EmptySection description={e.description} />
             return <span></span>;
         })}
 
@@ -156,5 +158,35 @@ export function CenterImage(props) {
             <img className='centerImage' src={props.image} alt={props.alt} />
             <figcaption> {props.caption} </figcaption>
         </figure>
+    )
+}
+
+
+export function ImageInline(props) {
+    return (
+        <div className='section'>
+            <div className='titles'>
+                <div className='caption'>
+                    <p className='caption'>
+                        {props.caption}
+                    </p>
+                </div>
+            </div>
+            <div className='descriptor'>
+                <img className='full' src={props.image} alt={props.alt} />
+            </div>
+        </div>
+    )
+}
+
+export function EmptySection(props) {
+    return (
+        <div className='section'>
+            <div className='titles'>
+            </div>
+            <div className='descriptor'>
+                <p className='descriptor'>{props.description}</p>
+            </div>
+        </div>
     )
 }
