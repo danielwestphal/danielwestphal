@@ -40,7 +40,6 @@ import OdysseyMIS from "../images/portfolio/raytracer/5/OdysseyMIS.png"
 import VeachMIS from "../images/portfolio/raytracer/5/VeachMIS.png"
 import VeachNEE from "../images/portfolio/raytracer/5/VeachNEE.png"
 import Clock from "../images/portfolio/raytracer/final/Clock.png"
-import Oren0 from "../images/portfolio/raytracer/final/Oren0.png"
 import Oren20 from "../images/portfolio/raytracer/final/Oren20.png"
 import Oren100 from "../images/portfolio/raytracer/final/Oren100.png"
 import Final from "../images/portfolio/raytracer/final/Final.png"
@@ -58,7 +57,7 @@ export const portfolio = [
         description: "My very own personal website!",
         link: "/portfolio/website",
         page: {
-            overview: "hi",
+            overview: "This page is under development",
             links: {
                 github: "https://github.com/danielwestphal/danielwestphal",
                 figma: "https://www.figma.com/file/7bqWKjDGBYeyBMLNIxCUd0/Personal-Website?node-id=0%3A1"
@@ -79,7 +78,7 @@ export const portfolio = [
         description: "A tablet app where family members can create collaborative digital stories to preserve precious memories.",
         link: "/portfolio/chronicle",
         page: {
-            overview: "hi",
+            overview: "This page is under development",
             links: {
                 figma: "https://www.figma.com/file/UN2AQC525WpNJZtvke3sRk/Final_Chong_Westphal?node-id=203%3A3701",
                 medium: "https://medium.com/@daniel.e.westphal.23/chronicle-ffe2deadd2bf"
@@ -101,7 +100,7 @@ export const portfolio = [
         description: "Sudoku solver and creator utilizing TCP server/client architecture.",
         link: "/portfolio/sudoku",
         page: {
-            overview: "hi",
+            overview: "This page is under development",
             links: {
                 github: "mailto:dew.23@dartmouth.edu"
             },
