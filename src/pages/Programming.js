@@ -118,6 +118,9 @@ export default function Programming(props) {
             else if (e.type === "centerImage") return <CenterImage image={e.image} alt={e.alt} caption={e.caption} />
             else if (e.type === "inlineImage") return <ImageInline image={e.image} alt={e.alt} caption={e.caption} />
             else if (e.type === "emptySection") return <EmptySection description={e.description} />
+            else if (e.type === "subSection") return <SubSection title={e.title} description={e.description} />
+            else if (e.type === "quote") return <Quote quote={e.quote} />
+
             return <span></span>;
         })}
 
@@ -161,6 +164,35 @@ export function CenterImage(props) {
     )
 }
 
+export function Quote(props) {
+    return (
+        <div className='section'>
+            <div>
+
+            </div>
+            <div className='center'>
+                <p style={{textAlign: 'center'}}><b>{props.quote}</b></p>
+            </div>
+        </div>
+
+    )
+}
+
+export function SubSection(props) {
+    return (
+        <div className='section'>
+            <div className='titles'>
+                <div className='captionish'>
+                    <p className='leftish overview'><b>{props.title}</b></p>
+                </div>
+
+            </div>
+            <div className='descriptor'>
+                <p className='descriptor'>{props.description}</p>
+            </div>
+        </div>
+    )
+}
 
 export function ImageInline(props) {
     return (
