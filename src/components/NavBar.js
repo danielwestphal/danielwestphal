@@ -2,7 +2,7 @@ import React from "react"
 import "../styles/App.css"
 import "../styles/NavBar.css"
 import { Switch } from "@mui/material"
-import Resume from "../documents/resume.pdf"
+import Resume from "../data/resume.pdf"
 import { styled } from '@mui/material/styles';
 import FormControlLabel from '@mui/material/FormControlLabel';
 
