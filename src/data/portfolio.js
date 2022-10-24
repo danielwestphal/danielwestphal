@@ -73,9 +73,56 @@ import Play from "../images/portfolio/sudoku/play.png"
 import Server from "../images/portfolio/sudoku/server.png"
 import ServerOutput from "../images/portfolio/sudoku/serveroutput.png"
 import Solver from "../images/portfolio/sudoku/solver.png"
-
+import WideAngle from "../images/portfolio/roomModel/WideAngle.jpg"
+import Bar from "../images/portfolio/roomModel/Bar.jpg"
+import Fireplace from "../images/portfolio/roomModel/Fireplace.jpg"
+import Lounge from "../images/portfolio/roomModel/Lounge.jpg"
+import Seating from "../images/portfolio/roomModel/Seating.jpg"
 
 export const portfolio = [
+    {
+        image: WideAngle,
+        tags: ["Digital Art"],
+        title: "Room Modeling",
+        date: "September 2022 - October 2022",
+        people: "Just Me!",
+        class: "COSC 22: 3D Digital Modeling",
+        tools: "Maya",
+        description: "My first attempt at 3D modeling. I designed the interior of a restaraunt based loosely off of one near my school.",
+        link: "/portfolio/room",
+        page: {
+            overview: "This was my first project for COSC 22: 3D Digital Modeling and my first experience with 3D modeling. The goal of the project was to model the interior of a room using Maya. For my room I chose to model a restaraunt loosely based off of one near my college. The modeling, texturing, and lighting were all hand done by me!",
+            links: {
+           },
+            structure: [
+                {
+                    type: "inlineImage",
+                    image: WideAngle,
+                    caption: "Wide angle shot of the restaraunt"
+                },
+                {
+                    type: "inlineImage",
+                    image: Bar,
+                    caption: "The bar"
+                },
+                {
+                    type: "inlineImage",
+                    image: Fireplace,
+                    caption: "A vertical of the fireplace"
+                },
+                {
+                    type: "inlineImage",
+                    image: Lounge,
+                    caption: "A shot of the lounge area"
+                },
+                {
+                    type: "inlineImage",
+                    image: Seating,
+                    caption: "A view as if you were sitting at a table"
+                },
+            ]
+        }
+    },
     {
         image: Portfolio,
         tags: ["Programming"],
